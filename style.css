@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;        
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 20px auto;    
+    max-width: 900px;    
+}
+.row {
+    display: flex;
+    gap: 40px;
+}
+
+.col {
+    flex: 1;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #444;
+}
+
+.info-list strong {
+    width: 120px;
+    display: inline-block;
+    color: #333;
+}
+
+/* ---- Giáo dục ---- */
+
+.edu-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background: #4CAF50;
+    border-radius: 50%;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.edu-content h3 {
+    margin: 0;
+    font-size: 17px;
+}
+
+.edu-content p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+.project-row {
+    display: flex;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.project-img img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.project-content h3 {
+    margin: 5px 0 15px 0;
+    font-size: 20px;
+}
+
+.project-tech {
+    color: #009688;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.project-info {
+    list-style: none;
+    padding: 0;
+}
+
+.project-info li {
+    margin: 6px 0;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+.profile-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+.profile-header h1 {
+    margin: 10px 0 5px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.profile-header h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #666;
+}
+
+.profile-header .desc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #777;
+}
