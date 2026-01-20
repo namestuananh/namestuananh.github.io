@@ -1,148 +1,177 @@
-body {
-    font-family: Arial, sans-serif;
-    background: #f5f5f5;
-    margin: 0;
-    padding: 20px;
+/* Import Modern Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+    --primary-color: #4CAF50;
+    --text-dark: #2c3e50;
+    --text-light: #555; /* Darker grey for better readability */
+    --bg-gradient: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg-gradient);
+    margin: 0;
+    padding: 30px 20px;
+    color: var(--text-dark);
+    line-height: 1.6; /* Standard line height for general text */
+}
+
+/* --- Main Container --- */
 .card {
     background: white;
-    padding: 24px;        
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    margin: 20px auto;    
-    max-width: 900px;    
-}
-.row {
-    display: flex;
-    gap: 40px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    margin: 0 auto 30px auto;
+    max-width: 1100px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.col {
-    flex: 1;
-}
-
-h2 {
+/* --- Typography --- */
+h1, h2, h3 {
+    color: var(--text-dark);
+    font-weight: 600;
     margin-top: 0;
-    color: #333;
 }
 
-p {
-    color: #555;
-    line-height: 1.5;
-}
-
-.info-list {
-    list-style: none;
-    padding: 0;
-}
-
-.info-list li {
-    margin: 10px 0;
-    font-size: 15px;
-    color: #444;
-}
-
-.info-list strong {
-    width: 120px;
+h1 { font-size: 2.8em; margin-bottom: 5px; }
+h2 {
+    font-size: 1.8em;
+    position: relative;
     display: inline-block;
-    color: #333;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+}
+h3 { font-size: 1.4em; margin-bottom: 10px; }
+p { margin: 5px 0 15px 0; color: var(--text-light); }
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 50px 0;
 }
 
-/* ---- Giáo dục ---- */
+/* --- Profile Header --- */
+.profile-header { text-align: center; margin-bottom: 50px; }
+.avatar {
+    width: 180px; height: 180px;
+    border-radius: 50%; object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    margin-bottom: 20px;
+}
+.profile-role {
+    color: var(--primary-color);
+    font-size: 1.2em; font-weight: 500;
+    text-transform: uppercase; letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.profile-desc { max-width: 700px; margin: 0 auto; }
 
-.edu-item {
+/* --- Grid System --- */
+.row { display: flex; gap: 50px; }
+.col { flex: 1; }
+
+/* --- Lists (General) --- */
+.info-list { list-style: none; padding: 0; }
+.info-list li {
+    margin-bottom: 12px;
     display: flex;
-    align-items: flex-start;
-    margin: 20px 0;
 }
+.info-list strong { min-width: 100px; margin-right: 10px; color: var(--text-dark); }
 
+/* --- Education --- */
+.edu-item {
+    display: flex; margin-bottom: 25px;
+    padding-left: 20px; position: relative;
+    border-left: 2px solid #eee;
+}
 .dot {
-    width: 14px;
-    height: 14px;
-    background: #4CAF50;
-    border-radius: 50%;
-    margin-right: 15px;
-    margin-top: 5px;
+    position: absolute; left: -7px; top: 6px;
+    width: 12px; height: 12px;
+    background: var(--primary-color); border-radius: 50%;
 }
+.edu-time { color: var(--primary-color); font-weight: 600; font-size: 0.95em; }
 
-.edu-content h3 {
-    margin: 0;
-    font-size: 17px;
-}
-
-.edu-content p {
-    margin: 5px 0;
-    font-size: 14px;
-}
+/* --- PROJECTS (Compact Mode) --- */
 .project-row {
     display: flex;
-    gap: 30px;
-    margin: 30px 0;
+    gap: 40px;
+    align-items: flex-start; /* Align top to prevent stretching */
 }
 
+/* Image Section */
+.project-img {
+    flex: 1.2; /* Slightly wider for the image */
+}
 .project-img img {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Content Section - COMPACT STYLING */
+.project-content {
+    flex: 1; /* Content takes equal or slightly less space */
 }
 
 .project-content h3 {
-    margin: 5px 0 15px 0;
-    font-size: 20px;
-}
-
-.project-tech {
-    color: #009688;
-    font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px; /* Reduce space below title */
+    font-size: 1.5em;
+    line-height: 1.3;
 }
 
 .project-info {
     list-style: none;
     padding: 0;
+    font-size: 0.95em; /* Slightly smaller font for compactness */
 }
 
 .project-info li {
-    margin: 6px 0;
+    margin-bottom: 6px; /* Tighten space between lines */
+    line-height: 1.5;   /* Tighten line height */
 }
 
-hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
+/* Responsibilities List - Compact */
+.resp-list {
+    margin-top: 5px;
+    padding-left: 18px;
+    margin-bottom: 5px;
 }
-.profile-header {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
-.avatar {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
-}
-
-.profile-header h1 {
-    margin: 10px 0 5px;
-    font-size: 32px;
-    font-weight: bold;
-}
-
-.profile-header h3 {
-    margin: 5px 0;
-    font-size: 18px;
+.resp-list li {
+    margin-bottom: 4px; /* Very tight spacing for bullet points */
     color: #666;
+    font-size: 0.95em;
 }
 
-.profile-header .desc {
-    margin-top: 8px;
-    font-size: 15px;
-    color: #777;
+/* Tech Tags */
+.tech-stack {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tech-tag {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+    .row, .project-row { flex-direction: column; gap: 30px; }
+    .project-img { width: 100%; max-width: 600px; margin: 0 auto; }
+}
+@media (max-width: 600px) {
+    .card { padding: 25px; }
+    h1 { font-size: 2em; }
+    .info-list li { flex-direction: column; }
 }
