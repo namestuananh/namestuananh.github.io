@@ -1,106 +1,122 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Online</title>
+    <title>Profile - Nguyen Ho Tuan Anh</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- HEADER PROFILE -->
-<div class="profile-header">
-    <img src="img/avatar.jpg" class="avatar" alt="Profile">
-    <h1>Nguyễn Hồ Tuấn Anh</h1>
-    <h3>Information Technology Student</h3>
-    <p class="desc">Sinh viên IT yêu thích lập trình web, database và phát triển phần mềm.</p>
-</div>
 
-    <!-- Ô 1: giới thiệu + Bio -->
+    <div class="profile-header">
+        <img src="img/avatar.jpg" class="avatar" alt="Nguyen Ho Tuan Anh">
+        <h1>Nguyen Ho Tuan Anh</h1>
+        <div class="profile-role">Information Technology Student</div>
+        <p class="profile-desc">Passionate IT student specializing in web development, database optimization, and innovative software engineering.</p>
+    </div>
+
     <div class="card">
         <div class="row">
             <div class="col">
-                <h2>About me</h2>
-                <p>Hello, my name is Nguyễn Hồ Tuấn Anh. I am currently an Information Technology student at Nam Cần Thơ University. I have one year of experience working as a web developer.</p>
+                <h2>About Me</h2>
+                <p>Hello, my name is Nguyen Ho Tuan Anh. I am currently an Information Technology student at Nam Can Tho University. I have one year of practical experience working as a Web Developer. I am eager to learn and apply modern technologies to build high-quality software solutions.</p>
             </div>
-
             <div class="col">
                 <h2>Bio</h2>
                 <ul class="info-list">
-                    <li><strong>Birthday:</strong> 6 August, 2005</li>
-                    <li><strong>E-mail:</strong> namestuananh@gmail.com</li>
-                    <li><strong>Phone:</strong> 0387 456 505 </li>
-                    <li><strong>Address:</strong> Phong Dien, Can Tho, Viet Nam</li>
+                    <li><strong>Birthday:</strong> <span>August 6, 2005</span></li>
+                    <li><strong>E-mail:</strong> <span>namestuananh@gmail.com</span></li>
+                    <li><strong>Phone:</strong> <span>(+84) 387 456 505</span></li>
+                    <li><strong>Address:</strong> <span>Phong Dien, Can Tho, Vietnam</span></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Ô 2 -->
     <div class="card">
         <h2>Education</h2>
-
         <div class="edu-item">
             <div class="dot"></div>
             <div class="edu-content">
-                <h3>Nam Cần Thơ University – Information Technology</h3>
-                <p>2023 - Present</p>
-                <p>Focus: Web development and database administration.</p>
+                <h3>Nam Can Tho University – Information Technology</h3>
+                <p class="edu-time">2023 - Present</p>
+                <p>Major: Web Development and Database Administration.</p>
             </div>
-        </div>
-            </div>
-<!-- Ô 3 -->
-<div class="card">
-    <h2>My Project</h2>
-
-    <!-- Project 1 -->
-    <div class="project-row">
-        <div class="project-img">
-            <img src="img/Motorbike.png" alt="Project Image">
-        </div>
-
-        <div class="project-content">
-            <h3>Honda Motorbike Chain Management System</h3>
-
-            <ul class="project-info">
-                <li><strong>Duration:</strong> 3 weeks</li>
-                <li><strong>Team size:</strong> Solo</li>
-                <li><strong>Description:</strong> A desktop application designed for the centralized management of Honda dealership chains, streamlining vehicle/spare part inventory, customer data, and sales workflows.</li>
-                <li><strong>Position(s):</strong> Full-stack Developer</li>
-                <li><strong>Responsibilities:<br> </strong> - Architected a multi-branch SQL database to flawlessly track unique VINs and high-value assets.br>
-							- Crafted an intuitive Windows Forms interface, prioritizing user experience for fast-paced daily sales and inventory operations.<br>
-							- Engineered automated workflows for stock management, real-time revenue calculation, and professional invoice generation.<br>
-							- Boosted system reliability by fine-tuning SQL performance and ensuring a bug-free environment.<br></li>
-                <li><strong>Tech:</strong> .NET Framework, C#, Windows Forms, SQL Server, Visual Studio 2022.</li>
-            </ul>
         </div>
     </div>
 
-    <hr>
+    <div class="card">
+        <h2>My Projects</h2>
 
-    <!-- Project 2 -->
-    <div class="project-row">
-        <div class="project-img">
-            <img src="img/nhathuoc.png" alt="Project Image">
+        <div class="project-row">
+            <div class="project-img">
+                <img src="img/Motorbike.png" alt="Honda Motorbike Project">
+            </div>
+
+            <div class="project-content">
+                <h3>Honda Motorbike Chain Management</h3>
+                <ul class="project-info">
+                    <li><strong>Duration:</strong> 3 weeks</li>
+                    <li><strong>Team size:</strong> Solo</li>
+                    <li><strong>Position:</strong> Full-stack Developer</li>
+                    <li>
+                        <strong>Description:</strong> A centralized desktop application for managing Honda dealership chains, streamlining vehicle/parts inventory, customer data, and sales workflows.
+                    </li>
+                    <li><strong>Responsibilities:</strong>
+                        <ul class="resp-list">
+                            <li>Architected a multi-branch SQL database to track VINs and assets.</li>
+                            <li>Designed an intuitive Windows Forms interface for daily operations.</li>
+                            <li>Engineered automated workflows for stock and revenue calculation.</li>
+                            <li>Optimized SQL performance to ensure system reliability.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET Framework</span>
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">WinForms</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
 
-        <div class="project-content">
-            <h3>Management of a small-scale pharmacy</h3>
+        <hr>
 
-            <ul class="project-info">
-                <li><strong>Duration:</strong> 2 months</li>
-                <li><strong>Team size:</strong> 6 members</li>
-                <li><strong>Description:</strong> A small-scale system for managing medicines, sales, inventory, and suppliers.</li>
-                <li><strong>Position(s):</strong> Full-stack Developer</li>
-                <li><strong>Responsibilities:</li></strong>  - Develop core features such as product management, inventory control, and billing.<br>
-							- Design and implement the database schema in SQL Server.<br>
-							- Build user interfaces and business logic using Visual Studio 2022.<br>
-							- Test, debug, and optimize system performance.<br>
-                <li><strong>Tech:</strong> .NET Framework, Visual Studio 2022, SQL Server, ASP.NET MVC.</li>
-            </ul>
+        <div class="project-row">
+            <div class="project-img">
+                <img src="img/nhathuoc.png" alt="Pharmacy Project">
+            </div>
+
+            <div class="project-content">
+                <h3>Pharmacy Management System</h3>
+                <ul class="project-info">
+                    <li><strong>Duration:</strong> 2 months</li>
+                    <li><strong>Team size:</strong> 6 members</li>
+                    <li><strong>Position:</strong> Full-stack Developer</li>
+                    <li>
+                        <strong>Description:</strong> A management system for small-scale pharmacies, handling medicine inventory, sales, and supplier data.
+                    </li>
+                    <li><strong>Responsibilities:</strong>
+                        <ul class="resp-list">
+                            <li>Developed core features: product management, inventory, billing.</li>
+                            <li>Designed and implemented the SQL Server database schema.</li>
+                            <li>Built user interfaces and business logic using Visual Studio.</li>
+                            <li>Performed testing, debugging, and performance optimization.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="tech-stack">
+                            <span class="tech-tag">.NET Framework</span>
+                            <span class="tech-tag">ASP.NET MVC</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
- 
 
 </body>
 </html>
